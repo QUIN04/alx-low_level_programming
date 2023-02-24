@@ -4,15 +4,18 @@
 * @c: Variable text
 * Return: Always 0.
 */
-int _isupper(int c)
+int _isupper(void)
 {
-if (c >= '65' && c <= '90')
+int c;
+printf("Enter letter: \n", c);
+scanf(" %c ", &c);
+if (c >= 'A' && c <= 'Z')
 {
-return (1);
+printf(" 1\n ");
 }
 else
 {
-return (0);
+printf(" 0\n ");
 }
 }
 
